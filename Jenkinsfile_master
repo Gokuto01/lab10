@@ -8,6 +8,7 @@ pipeline {
                      dir('lab10') {
                         echo "Current path is  ${pwd()}"
                         sh 'docker-compose down --rmi all --volumes || true'
+                        echo "Test Web-hook"
                      }
                 }
             }
